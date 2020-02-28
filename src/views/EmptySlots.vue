@@ -1,6 +1,6 @@
 <template>
-  <!-- <Layout> -->
-    <t-card
+  <Layout>
+    <!-- <t-card
       header="Electronic Payment Info"
       baseClass="mx-auto w-2/6 border-gray-500 rounded-lg border shadow-md"
       headerClass="bg-gray-300 rounded-t-lg mx-0 py-1 text-xl border-b"
@@ -25,18 +25,22 @@
           </div>
         </div>
       </form>
-    </t-card>
-  <!-- </Layout> -->
+    </t-card> -->
+  </Layout>
 </template>
 
 <script>
 import Vue from "vue"
 import { Component } from "vue-property-decorator"
-// import Layout from "./Layout"
+import Layout from "./Layout"
 // import Settings from "./Settings"
 // import { Header, Footer, Content, Dogs, Three } from "./components";
 
-@Component({})
+@Component({
+    components: {
+      Layout
+    }
+})
 export default class EmptySlot extends Vue {
   amount = 0;
   cardNum = 0;

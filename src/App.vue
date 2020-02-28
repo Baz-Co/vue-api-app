@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/slot">Empty Slots</router-link> |
-      <router-link to="/local">Component State</router-link> |
-      <router-link to="/vuex">Vuex State</router-link> |
-      <router-link to="/mirage">Mirage API</router-link> |
-      <router-link to="/serverAPI">Server API Implementation</router-link>
-    </div>
-    <router-view/>
+  <!-- <div class="flex flex-col h-screen" id="app"> -->
+      <h1 class="p-6 bg-blue-300 text-white">Card Payment</h1>
+      <div class="border-b border-blue-300" id="nav">
+        <router-link to="/local">Component State</router-link> |
+        <router-link to="/vuex">Vuex State</router-link> |
+        <router-link to="/mirage">Mirage API</router-link> |
+        <router-link to="/serverAPI">Server API Implementation</router-link>
+      </div>
+      <router-view/>
+      <!-- <div class="text-red flex-grow items-start" /> -->
+      <h2 class="bg-blue-300"><a href="https://github.com/Baz-Co/vue-api-app" target="_blank">Vue API Repo</a></h2>
   </div>
 </template>
 
@@ -21,7 +24,7 @@
 }
 
 #nav {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 #nav a {
