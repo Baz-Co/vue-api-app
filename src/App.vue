@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/slot">Empty Slots</router-link> |
+      <router-link to="/local">Component State</router-link> |
+      <router-link to="/vuex">Vuex State</router-link> |
+      <router-link to="/mirage">Mirage API</router-link> |
+      <router-link to="/serverAPI">Server API Implementation</router-link>
     </div>
     <router-view/>
   </div>
